@@ -18,7 +18,7 @@ public class MortgageCalculator {
         int years = scanner.nextInt();
         int numberOfPayments = years * MONTHS_IN_YEAR;
         
-        double mortgage = principal*((annualInterest*Math.pow(1+annualInterest , numberOfPayments))/Math.pow(1+annualInterest , numberOfPayments)-1);
+        double mortgage = principal*((monthlyInterest*Math.pow(1+monthlyInterest , numberOfPayments))/Math.pow(1+monthlyInterest , numberOfPayments)-1);
         
         String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);
         System.out.println( "Mortgage : " + mortgageFormatted);

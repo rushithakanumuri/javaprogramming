@@ -12,3 +12,9 @@ while(i<5){
     i++;
 }
 */
+
+/*For-Each loop
+  String[] fruits ={"Apple","Mango","Orange"};
+  for(String fruit : fruits)
+  System.out.println(fruit);
+ */
